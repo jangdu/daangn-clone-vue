@@ -1,0 +1,26 @@
+//_mixin.scss
+@import './variables';
+
+@mixin bp-s {
+    @media (max-width: #{$breakpoint-s}){
+        @content;
+    }
+}
+@mixin bp-m {
+    @media (max-width: #{$breakpoint-m}){
+        @content;
+    }
+}
+@mixin bp-lg {
+    @media (max-width : #{$breakpoint-lg}){
+        @content;
+    }
+}
+@mixin bp-xl {
+  @media (min-width : #{$breakpoint-xl}){
+      @content;
+  }
+}
+@mixin test {
+    @content;
+}

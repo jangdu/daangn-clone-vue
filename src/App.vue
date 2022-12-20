@@ -1,30 +1,60 @@
 <template>
-  <nav>
+<div class="daangn-container">
+  <div class="danngn-nav">
+    <DaangnNav/>
+  </div>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <router-view/>
+  <!-- <div class="bottom-nav-block">
+    <nav>
+      <router-link to="/" class="bottom-nav-element">홈</router-link>
+      <router-link to="/" class="bottom-nav-element">홈</router-link>
+      <router-link to="/" class="bottom-nav-element">홈</router-link>
+      <router-link to="/" class="bottom-nav-element">홈</router-link>
+      <router-link to="/" class="bottom-nav-element">홈</router-link>
+    </nav>
+  </div> -->
+</div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script setup>
+import DaangnNav from './components/DaangnNav.vue'
+</script>
+
+<style lang="scss">
+
+.daangn-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgba($color: #000000, $alpha: 0.1);
+  display: inherit;
+  display: block;
+  position: relative;
+  align-items: center;
+  border: none;
 }
 
-nav {
-  padding: 30px;
+.danngn-nav {
+  width: 100%;
+  height: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  z-index: 999;
+  border: none;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+.bottom-nav-block {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
 
-nav a.router-link-exact-active {
-  color: #42b983;
+}
+.bottom-nav-element{
+
 }
 </style>
