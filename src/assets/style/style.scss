@@ -1,2 +1,60 @@
-
+$mainColor: #ff6f0f;
 $cursoredColor : #f2f3f6;
+$clickedColor: #868b94;
+
+.dangn-btns {
+  margin-top: 32px;
+}
+
+.dangn-btn {
+  cursor: pointer;
+  background-color: $cursoredColor;
+  color: #212529;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 14px 26px;
+  display: inline-block;
+  font-weight: bold;
+  &:hover{
+    background-color: #e2e2e2;
+  }
+}
+
+.mt{
+  &-2{
+    margin-top: 20px;
+  }
+}
+.mb{
+  &-1{
+    margin-bottom: 10px;
+  }
+}
+
+.text{
+  &-lg{
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  &-m{
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  &-sm{
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  &-xs{
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+}
+
+.bold{
+  font-weight: bold;
+}

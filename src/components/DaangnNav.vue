@@ -33,8 +33,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "../assets/style/_mixin.scss";
-@import "../assets/style/style.scss";
 a{
   text-decoration: none;
   color: black;
@@ -53,10 +51,11 @@ a{
   box-sizing: border-box;
   justify-content: space-between;
   width: 100%;
+  max-width: 1200px;
   position: relative;
   display: flex;
+  margin: 0 auto;
   align-items: center;
-  background-color: white;
 }
 .nav-logo-block{
   display: inline-flex;
@@ -94,7 +93,7 @@ a{
     line-height: 1.32;
     a {
       &:hover{
-        color: #868b94;
+        color: $clickedColor;
       }
     }
   }
@@ -124,6 +123,7 @@ a{
   button{
     &:hover{
       background-color: $cursoredColor;
+      color: $clickedColor;
     }
     line-height: 1.3;
     font-size: 16px;

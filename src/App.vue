@@ -3,6 +3,7 @@
   <div class="danngn-nav">
     <DaangnNav/>
   </div>
+  <div style="margin: 30px;"></div>
   <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -28,7 +29,6 @@ import DaangnNav from './components/DaangnNav.vue'
 
 .daangn-container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   border: 1px solid rgba($color: #000000, $alpha: 0.1);
   display: inherit;
@@ -41,11 +41,12 @@ import DaangnNav from './components/DaangnNav.vue'
 .danngn-nav {
   width: 100%;
   height: 64px;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999;
   border: none;
+  background-color: white;
 }
 
 .bottom-nav-block {
