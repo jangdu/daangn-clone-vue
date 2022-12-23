@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import DaangnNav from './components/DaangnNav.vue'
+import DaangnNav from './components/nav/DaangnNav.vue'
 </script>
 
 <style lang="scss">

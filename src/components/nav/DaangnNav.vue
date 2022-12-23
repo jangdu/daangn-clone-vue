@@ -1,7 +1,7 @@
 <template>
   <div class="daangn-nav-block">
     <div class="nav-logo-block">
-      <router-link to="/" class="nav-logo"><img src="../assets/daangn.png" alt="" class="nav-icon"></router-link>
+      <router-link to="/" class="nav-logo"><img src="../../assets/daangn.png" alt="" class="nav-icon"></router-link>
     </div>
     <nav class="nav-btns">
       <ul class="nav-btn-block block">
